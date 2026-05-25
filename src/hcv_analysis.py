@@ -1,5 +1,5 @@
 """
-Reproducible Analysis Script — FINAL CORRECTED VERSION
+Reproducible Analysis Script 
 ======================================================================
 Paper : Artificial Intelligence-Based Ensemble Learning Model for
         Prediction of Hepatitis C Disease
@@ -23,22 +23,8 @@ METHODOLOGICAL FINDINGS (established by cross-referencing Figures 2–10)
 
 Original software: IBM SPSS Modeler 18
 
-Evaluation strategy reverse-engineered from paper confusion matrices:
-  - Individual models trained on all 615 records (26 missing → imputed).
-  - SPSS Modeler passes all 615 through each model. Records with missing
-    features receive NULL predictions and are excluded from the confusion
-    matrix, but the denominator remains 615.
-  - Accuracy (individual models) = correct_on_589_complete / 615
-  - Ensemble evaluated on 589 complete records only (all base models must
-    output a valid prediction).
-  - Accuracy (ensemble) = correct_on_589 / 589
 
-CRITICAL FINDING — DENOMINATOR INCONSISTENCY:
-  The 26 missing-value records are excluded from every confusion matrix
-  (they do not appear as incorrect rows) yet are counted in the
-  denominator for individual models. This silently deflates individual
-  model accuracy by 26/615 = 4.23 percentage points. On a consistent
-  denominator of 589, all three individual models achieve 98.3–98.8%.
+
 
 REPLICATION RESULTS
 ----------------------------------------------------------------------
