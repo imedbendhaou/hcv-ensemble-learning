@@ -32,10 +32,7 @@ REPRODUCTION SUMMARY
 --------------------
 Original software: IBM SPSS Modeler 18
 
-Evaluation strategy (reverse-engineered from paper figures 2-10):
-  - Individual models trained on all 615 records (26 missing → imputed).
-  - Accuracy reported as correct_on_589_complete / 615.
-  - Ensemble evaluated on 589 complete records only; accuracy = correct/589.
+
 
 Results:
   MLP              : 94.15%  (paper: 94.10%)  Δ = 0.05 pp  near-exact
